@@ -1,16 +1,17 @@
 package recu;
+
 /**
  *
  * @author Jesús Ariza
  */
 public class Principal {
+
     public static void main(String[] args) {
-        Persona p1 = new Persona();
-        p1.setEmail("_1111abcd_@test.com");
-        p1.setTelefono("603504538");
-        System.out.println(p1.getEmail());
-        System.out.println(p1.getTelefono());
-        
-        
+        Calificacion c1 = new Calificacion();
+        c1.setTeorico(7.27);
+        c1.setPractico(09.9);
+        System.out.println(c1.toString());
+        System.out.println(c1.calcularMedia());
+
     }
 }
